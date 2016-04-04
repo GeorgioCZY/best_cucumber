@@ -1,0 +1,5 @@
+<% common = "-r features/step_definitions -r features/support/env.rb" %>
+
+default: -r features/support/browser_env.rb -r features/support/staging_env.rb <%= common %>
+staging: -r features/support/browser_env.rb -r features/support/staging_env.rb <%= common %>
+prod: -r features/support/browser_env.rb -r features/support/prod_env.rb <%= common %>
